@@ -32,4 +32,6 @@ int player :: getMove() {
 
     }
 
+    return move;
+//No return statement?
 }
