@@ -14,7 +14,7 @@ void game::start() {
     char playAgain = 'y';
 
     while (playAgain == 'y') {
-        board.reset();  // Reset the board for a new game
+        board.reset();
         play();
         cout << "Play Again? y or n: ";
         cin >> playAgain;
@@ -31,14 +31,14 @@ void game::play() {
             if (board.checkWin(currentPlayer->getLetter())) {
                 board.displayBoard();
                 cout << "Player " << currentPlayer->getLetter() << " won!" << endl;
-                break;  // Exit the loop after a win
+                break;
             }
             if (board.isDraw()) {
                 board.displayBoard();
                 cout << "It's a tie!" << endl;
-                break;  // Exit the loop after a draw
+                break;
             }
-            // Switch to the other player
+            //
             currentPlayer = (currentPlayer == &player1) ? &player2 : &player1;
         } else {
             cout << "Invalid move, please enter a valid move." << endl;

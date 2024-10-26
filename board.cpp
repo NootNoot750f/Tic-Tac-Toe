@@ -1,10 +1,12 @@
+//
+// Created by nickh on 10/21/2024.
+//
+
 #include "board.h"
 using namespace std;
 
-// Constructor
 board::board() : grid{'1', '2', '3', '4', '5', '6', '7', '8', '9'} {}
 
-// Display the current state of the board
 void board::displayBoard() const {
     cout << " | " << grid[0] << " | " << grid[1] << " | " << grid[2] << " | " << endl;
     cout << "-----------" << endl;
@@ -53,12 +55,10 @@ bool board::isDraw() {
     return true; // No available cells, it's a draw
 }
 
-// Check if a cell is free
 bool board::cellFree(int cell) const {
     return (cell >= 1 && cell <= 9 && grid[cell - 1] >= '1' && grid[cell - 1] <= '9');
 }
 
-// Reset the board to its initial state
 void board::reset() {
     for (int i = 0; i < 9; ++i) {
         grid[i] = '1' + i; // Reassign cells to default values ('1' to '9')

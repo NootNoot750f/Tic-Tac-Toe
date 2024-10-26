@@ -1,3 +1,7 @@
+//
+// Created by nickh on 10/21/2024.
+//
+
 #ifndef BOARD_H
 #define BOARD_H
 
@@ -8,16 +12,16 @@ using namespace std;
 class board {
 public:
     board(); // Constructor
-    bool makeMove(int cell, char player); // Make a move on the board
-    void displayBoard() const; // Display the current state of the board
-    bool checkWin(char player); // Check if a player has won
-    bool isDraw(); // Check if the game is a draw
+    bool makeMove(int cell, char player);
+    void displayBoard() const;
+    bool checkWin(char player);
+    bool isDraw();
     bool cellFree(int cell) const;
 
-    void reset(); // Reset the board
+    void reset();
 
 private:
-    vector<char> grid; // Change from int to char to store player marks
+    vector<char> grid;
 };
 
 #endif // BOARD_H
