@@ -1,27 +1,20 @@
-//
-// Created by nickh on 10/21/2024.
-//
-
 #ifndef BOARD_H
 #define BOARD_H
 
-#include <iostream>
-#include <vector>
-using namespace std;
-
 class board {
+private:
+    char grid[9];
+
 public:
-    board(); // Constructor
-    bool makeMove(int cell, char player);
+    board();
     void displayBoard() const;
+    bool makeMove(int cell, char player);
     bool checkWin(char player);
     bool isDraw();
     bool cellFree(int cell) const;
-
     void reset();
-
-private:
-    vector<char> grid;
+    bool checkSwarmWin();
+    void removeMark();
 };
 
-#endif // BOARD_H
+#endif

@@ -1,31 +1,23 @@
-//
-// Created by nickh on 10/21/2024.
-//
-
 #ifndef GAME_H
 #define GAME_H
-#include "player.h"
+
 #include "board.h"
-
-#include <iostream>
-#include <string>
-using namespace std;
-
+#include "player.h"
 
 class game {
-public:
-    game();
-    void start();
-
 private:
     board board;
     player player1;
     player player2;
-    void play();
+
+    void askArchetype(player& p);
     bool isValidMove(int move);
-    void controlEnd();
+    void handleBattle();
+
+public:
+    game();
+    void start();
+    void play();
 };
 
-
-
-#endif //GAME_H
+#endif

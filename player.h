@@ -1,23 +1,22 @@
-//
-// Created by nickh on 10/21/2024.
-//
-
 #ifndef PLAYER_H
 #define PLAYER_H
 
 #include <string>
-#include <iostream>
-using namespace std;
 
 class player {
-public:
-    player(char letter);
-    char getLetter();
-    int getMove();
 private:
     char letter;
+    std::string archetype;
+    bool usedSpecialMove;
+
+public:
+    player(char letter, std::string archetype);
+    int getMove();
+    void setArchetype(std::string newArchetype);
+    std::string getArchetype() const;
+    void useSpecialMove();
+    bool canUseSpecialMove() const;
+    char getLetter() const;
 };
 
-
-
-#endif //PLAYER_H
+#endif
