@@ -1,0 +1,11 @@
+# ninja log v6
+9	376	7557787384093393	CMakeFiles/Tic_Tac_Toe.dir/archetype.cpp.obj	37f8b47b930fa361
+22	499	7557787384223395	CMakeFiles/Tic_Tac_Toe.dir/board.cpp.obj	129cc6adff01462f
+50	503	7557787384503390	CMakeFiles/Tic_Tac_Toe.dir/main.cpp.obj	2697c3d0ae8b5b74
+66	515	7557787384663403	CMakeFiles/Tic_Tac_Toe.dir/player.cpp.obj	d3ec5e6aa643d0bb
+37	550	7557787384383379	CMakeFiles/Tic_Tac_Toe.dir/game.cpp.obj	6e914e288abad6e4
+550	780	7557787389503378	Tic_Tac_Toe.exe	7f85304689c70913
+12	514	7557793876533231	CMakeFiles/Tic_Tac_Toe.dir/game.cpp.obj	6e914e288abad6e4
+515	703	7557793881563253	Tic_Tac_Toe.exe	7f85304689c70913
+14	534	7557803973027919	CMakeFiles/Tic_Tac_Toe.dir/game.cpp.obj	6e914e288abad6e4
+535	713	7557803978237933	Tic_Tac_Toe.exe	7f85304689c70913
