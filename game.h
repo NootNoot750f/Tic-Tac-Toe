@@ -10,14 +10,23 @@ private:
     player player1;
     player player2;
 
+    // Add these missing variables
+    int gamesPlayed;
+    int player1Wins;
+    int player2Wins;
+    int ties;
+
+    // Private helper functions
     void askArchetype(player& p);
     bool isValidMove(int move);
+    void updateStats(char winner, bool isDraw);
+    void generateReport();
+    void play();
     void handleBattle();
 
 public:
-    game();
-    void start();
-    void play();
+    game(); // Constructor
+    void start(); // Main game loop
 };
 
 #endif
